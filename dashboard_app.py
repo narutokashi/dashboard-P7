@@ -23,6 +23,7 @@ def force_plot_html(*args):
 
 # Create the app
 app = dash.Dash(external_stylesheets=[dbc.themes.FLATLY])
+server = app.server
 
 select_client = dbc.Card([html.Div([dbc.Label("Client ID"),
                                   dcc.Dropdown(id="Client ID", options=df['SK_ID_CURR'].values,
