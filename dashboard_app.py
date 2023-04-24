@@ -145,8 +145,8 @@ def predict(client_id):
     idx = data.index.values
     shap_html = force_plot_html(shap_values[idx])
 
-    fig_shap = go.Figure(data=go.Scatterpolar(r=[ 0.04530796, -0.27021242, -0.5658526 , -0.47969472, -0.02236737,
-        0.02951732,  0.03680467,  0.19357835],
+    fig_shap = go.Figure(data=go.Scatterpolar(r=[ 0.19357835, 0.04530796, 0.03680467 , 0.02951732, -0.02236737,
+        -0.27021242,  -0.47969472,  -0.5658526 ],
                                               theta=['PREV_NAME_CONTRACT_STATUS_Refused_MEAN', 'DAYS_BIRTH',
                                                      'BURO_CREDIT_ACTIVE_Active_MEAN', 'BURO_DAYS_CREDIT_UPDATE_MEAN',
                                                      'BURO_DAYS_CREDIT_MEAN', 'EXT_SOURCE_1',
